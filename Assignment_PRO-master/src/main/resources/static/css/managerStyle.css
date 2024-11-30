@@ -1,0 +1,139 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Sans-serif;
+}
+
+.revenueStatic {
+    display: flex;
+    height: 40%;
+    padding: 4%;
+}
+
+.topSold {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    row-gap: 5px;
+
+}
+
+.topSold h2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 24%;
+    
+}
+
+.productbar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    gap: 30px;
+}
+
+.soldChart {
+    margin-top: 3%;
+    width: 67%;
+    height: 100%;
+}
+
+.productName,
+.productQuantity {
+    box-sizing: border-box;
+    max-height: 22px;
+    margin-bottom: 3%;
+}
+
+.productName {
+    grid-column: span 2;
+}
+
+
+.productQuantity {
+    grid-column: span 1;
+    background-color: rgb(244, 69, 69);
+    color: white;
+    border-radius: 3px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#myChart {
+    padding-left: 10%;
+    width: 90% !important;
+    height: 100%;
+    padding-right: 10%;
+}
+
+#revenueValue {
+    display: none;
+}
+
+.navigator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3B7EE2;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+img {
+    width: 45px; 
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+
+
+h4 {
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+
+.inventory, .transaction, .staff {
+    cursor: pointer;
+    width: 12%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 5px; 
+    margin-right: 1.5%; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.inventory:hover, .transaction:hover, .staff:hover {
+    background-color: #7fa6de; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.fa-right-from-bracket {
+    color: white;
+    font-size: 22px;
+   margin-left: auto;
+    padding: 10px; 
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-right-from-bracket:hover {
+    color: #FF7F7F;
+    transform: scale(1.1); 
+}
